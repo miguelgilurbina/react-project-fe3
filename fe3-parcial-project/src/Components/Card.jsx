@@ -1,4 +1,4 @@
-const [mostrarCarta, setMostrarCarta] = useState(false)
+
 
 const Card = (apodo) => {
 

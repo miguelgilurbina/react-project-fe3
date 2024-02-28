@@ -8,8 +8,8 @@ function App() {
 
   return (
     <>
-      <h1>Elige una Playlist</h1>
-      
+      <h1>Ingresa tus datos y obtén una playlist secreta</h1>
+
        <Form/>
       
     </>

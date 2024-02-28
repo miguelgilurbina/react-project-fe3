@@ -17,8 +17,6 @@ const Form = () => {
       setErr(false)
       setMostrarCarta(true)
     
-      
-      
     } else {
       setErr(true)
     }
