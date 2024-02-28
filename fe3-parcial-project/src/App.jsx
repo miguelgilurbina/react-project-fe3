@@ -1,15 +1,17 @@
-import { useState } from 'react'
+
 import './App.css'
-import  Card from './Card.jsx'
-import Form from './Form.jsx'
+import Form from './Components/Form.jsx'
 
 function App() {
- 
+
+
 
   return (
     <>
-    <Card></Card>  
-    <Form></Form>
+      <h1>Elige una Playlist</h1>
+      
+       <Form/>
+      
     </>
   )
 }
