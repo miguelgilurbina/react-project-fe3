@@ -9,6 +9,7 @@ const Form = () => {
 
   const [err, setErr] = useState(false)
   const [mostracarta, setMostrarCarta ] = useState(false)
+  const [show, setShow] = useState(false)
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -25,13 +26,13 @@ const Form = () => {
   
   return (
     <>
-    <h3>Llena el formulario y obtén la playlist oculta</h3>
-    <form onSubmit={handleSubmit}>
-      <label> Nombre: </label>
-      <input type="text" onChange= {({target}) => setVisitante({...visitante, nombre: target.value})}/>
-      <label> Apodo: </label> 
-      <input type="text" onChange={({target}) => setVisitante({...visitante, apodo: target.value})}/>
-      <button onClick= {()=> setMostrarCarta(true)}>Enviar</button>
+      <h3>Llena el formulario y obtén la playlist oculta</h3>
+      <form onSubmit={handleSubmit}>
+        <label> Nombre: </label>
+        <input type="text" onChange= {({target}) => setVisitante({...visitante, nombre: target.value})}/>
+        <label> Apodo: </label> 
+        <input type="text" onChange={({target}) => setVisitante({...visitante, apodo: target.value})}/>
+        <button onClick= {()=> setMostrarCarta(true)}>Enviar</button>
     </form>
 
     {show && <h4>Hola {visitante.nombre} o más bien {visitante.apodo} gracias por ingresar tus datos! Disfruta la playlist!</h4>

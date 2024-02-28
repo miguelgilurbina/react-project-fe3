@@ -1,11 +1,10 @@
 
 
-const Card = (apodo) => {
+const Card = ({apodo}) => {
 
  
   return (
     <div>
-     
       <h3>Caravana en el Desierto</h3>
       <h4>Una playlist con un mood Excéntrico</h4>
       <img src= "src\assets\CNLD8.jpg"/> 
