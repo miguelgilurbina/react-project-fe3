@@ -17,9 +17,11 @@ const Form = () => {
       
       setErr(false)
       setMostrarCarta(true)
+      setShow(true)
     
     } else {
       setErr(true)
+      setMostrarCarta(false)
     }
   
   }
