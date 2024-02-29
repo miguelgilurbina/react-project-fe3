@@ -1,6 +1,7 @@
 import {useState} from 'react'
 import Card from './Card'
 
+
 const Form = () => {
   const [visitante, setVisitante] = useState({
     nombre: '',
@@ -39,7 +40,7 @@ const Form = () => {
 
     {show && <h4>Hola {visitante.nombre} o más bien {visitante.apodo} gracias por ingresar tus datos! Disfruta la playlist!</h4>
     }
-    <hr />
+    <hr/>
     {mostracarta && <Card/>}
     {err && <p>Coloque la información correctamente.  </p>}
     

@@ -11,7 +11,6 @@ function App() {
       <h1>Ingresa tus datos y obtén una playlist secreta</h1>
 
        <Form/>
-       
       
     </>
   )
